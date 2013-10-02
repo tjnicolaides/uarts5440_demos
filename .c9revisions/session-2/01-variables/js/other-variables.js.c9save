@@ -1,0 +1,6 @@
+{"ts":1371074298265,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"var num1 = 100;\nvar num2 = num1;\n\nconsole.log(num2);\n\nnum1 = num1 * 10;\n\nconsole.log(num2);\n\nnum2 = num1;\n\nconsole.log(num2);"]],"start1":0,"start2":0,"length1":0,"length2":125}]],"length":125}
+{"contributors":[],"silentsave":false,"ts":1371077873606,"patch":[[{"diffs":[[0,"num2);\n\n"],[1,"/*"],[0,"num1 = n"]],"start1":46,"start2":46,"length1":16,"length2":18},{"diffs":[[0," = num1;\n\nconsole.log(num2);"],[1,"*/"]],"start1":99,"start2":99,"length1":28,"length2":30}]],"length":129,"saved":false}
+{"ts":1371077915288,"patch":[[{"diffs":[[0," num1 = "],[-1,"1"],[1,"2"],[0,"00;\nvar "]],"start1":3,"start2":3,"length1":17,"length2":17}]],"length":129,"saved":false}
+{"ts":1371077970199,"patch":[[{"diffs":[[0,");\n\n"],[-1,"/*"],[0,"num1"]],"start1":50,"start2":50,"length1":10,"length2":8},{"diffs":[[0,"num2);\n\n"],[1,"/*"],[0,"num2 = n"]],"start1":85,"start2":85,"length1":16,"length2":18}]],"length":129,"saved":false}
+{"ts":1371078030597,"patch":[[{"diffs":[[0," * 10;\n\n"],[1,"var num2 = num1;\n\n"],[0,"console."]],"start1":65,"start2":65,"length1":16,"length2":34}]],"length":147,"saved":false}
+{"ts":1371078055063,"patch":[[{"diffs":[[0," * 10;\n\n"],[-1,"var "],[0,"num2 = n"]],"start1":65,"start2":65,"length1":20,"length2":16}]],"length":143,"saved":false}

@@ -1,0 +1,42 @@
+#bgColor {
+  width: 300px;
+  height: 200px;
+  background-color: #e8a71a;
+  padding: 10px;
+}
+#cloneContainer {
+  padding: 10px;
+  border: 1px solid #6d6d6d;
+  overflow: hidden;
+}
+#cloneContainer #cloneDiv {
+  float: left;
+  background-color: #2094d7;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin-right: 10px;
+}
+#removeme {
+  background-color: #7a1ae2;
+  height: 200px;
+  padding: 10px;
+}
+#emptyme {
+  background-color: #ebef00;
+  overflow: hidden;
+  padding: 10px;
+}
+.highlight-divs div {
+  height: 100px;
+  background-color: #737373;
+}
+.highlight-divs div.highlighted {
+  background-color: #e80000;
+}
+#findme {
+  width: 300px;
+  height: 200px;
+  background-color: #0ceb1b;
+  padding: 10px;
+}

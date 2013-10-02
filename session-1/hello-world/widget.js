@@ -1,0 +1,1 @@
+document.write('Whoops my widget showed up in the wrong spot!');

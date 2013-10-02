@@ -1,0 +1,2 @@
+{"ts":1371679078882,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"function add(a,b) {\n\treturn a + b;\n}\n\nconsole.log(add(3,4));"]],"start1":0,"start2":0,"length1":0,"length2":60}]],"length":60}
+{"contributors":[],"silentsave":false,"ts":1371681056886,"patch":[[{"diffs":[[1,"var sum = add(10, 30);\n\nconsole.log(sum);\n\n"],[0,"function"]],"start1":0,"start2":0,"length1":8,"length2":51},{"diffs":[[0,"+ b;\n}\n\n"],[1,"\n//"],[0,"console."]],"start1":73,"start2":73,"length1":16,"length2":19}]],"length":106,"saved":false}

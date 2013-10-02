@@ -1,0 +1,1 @@
+{"ts":1371077019213,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"// true\nvar bool = true;\n\nconsole.log(bool);\n\n// false\nbool = false;\n\nconsole.log(bool);\n\n// \"falsy\" or \"false-ish\" values = null, undefined, '', 0, NaN\n// \"truthy\" values = anything not falsy"]],"start1":0,"start2":0,"length1":0,"length2":192}]],"length":192}

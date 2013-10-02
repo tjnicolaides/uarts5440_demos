@@ -1,0 +1,2 @@
+{"ts":1371075129494,"silentsave":true,"restoring":false,"patch":[[{"diffs":[[1,"// simple types\n\n// numbers\nvar myNum = 6;\nconsole.log(6);\n\n// strings\nvar myString = 'Hello, nurse!';\nconsole.log(myString);\n\n// booleans - true or \"falsy\"\nvar myBool = true;\nconsole.log(myBool);\n\n"]],"start1":0,"start2":0,"length1":0,"length2":198}]],"length":198}
+{"ts":1371075390374,"patch":[[{"diffs":[[0,"Bool"],[-1," = true"],[0,";\nco"]],"start1":163,"start2":163,"length1":15,"length2":8}]],"length":191,"saved":false}
