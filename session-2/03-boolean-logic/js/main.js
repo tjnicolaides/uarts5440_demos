@@ -3,25 +3,25 @@
 
 // here's a microwave. Just go with it:
 
-var cook_time = '0';
+var cook_time = prompt('How long should we cook it for?');
+    cook_time = parseInt(cook_time);
+    
 var min_cook_time = 60;
 
-var notZero = cook_time !== 0; // true
-//var lessThanCookTime = (cook_time < min_cook_time); // true
-
-if(notZero) {
+if(cook_time > min_cook_time) {
     
-    console.log('your hot pocket is being cooked RIGHT NOW.');
-
-} /*else if (!greaterThanZero  && lessThanCookTime) {
+    alert('It\'s scalding hot! Ouch');
     
-    console.log('Your Hot Pocket is half done');
-        
+} else if ( cook_time === min_cook_time) {
     
-}*/ else {
+    alert('Your hot pocket is perfectly cooked.');
     
-    console.log('your hot pocket is like a frozen cheese brick');
+} else {
+    
+    alert('Still frozen. Ew.');
+    
 }
+
 
 // inequality ... >= <= > <
 // loose equality == !=

@@ -2,13 +2,13 @@
 
 // numbers
 var myNum = 6;
-console.log(6);
+console.log(myNum);
 
 // strings
 var myString = 'Hello, nurse!';
 console.log(myString);
 
 // booleans - true or "falsy"
-var myBool;
+var myBool = false;
 console.log(myBool);
 

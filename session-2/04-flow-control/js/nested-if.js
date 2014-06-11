@@ -2,38 +2,34 @@
 
 
 var yardsToGo = 45;
-var homeGame = true;
+var homeGame = false;
+var play = 30;
+var scoringPlay = play >= yardsToGo;
 
-var play = 50;
-
-if(play >= yardsToGo) {
-	
-	console.log('Touchdown!');
+if(homeGame) {
+    // Philadelphia
     
-    if(homeGame) {
+    if(scoringPlay) {
         
-        console.log("And the crowd goes wild!");
+        alert('Touchdown! And the crowd goes wild!');
         
     } else {
         
-        console.log("Oh my, these fans are getting SURLY.");
-        
+        alert('Fourth down, and they\'ll be forced to punt. Oh my, these fans are getting SURLY.');
+   
     }
-		
-} else  {
-
-    console.log("Fourth down, and they'll be forced to punt.");
     
-    if(homeGame) {
+} else {
+   // Some other stadium 
+    
+    if(scoringPlay) {
         
-        console.log("Oh my, these fans are getting SURLY.");
-        
+        alert('Touchdown! Oh my, these fans are getting SURLY.');
     } else {
         
-        console.log("And the crowd goes wild!");
-        
+        alert('Fourth down, and the crowd goes wild.');
     }
-
+    
 }
 
 /*

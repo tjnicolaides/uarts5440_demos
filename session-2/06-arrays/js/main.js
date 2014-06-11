@@ -1,26 +1,21 @@
-var animals = ['Cow', 'Horse', 'Chicken', 'Pig', 'Dog'];
+var animals = ['Cow', 'Horse', 'Chicken', 'Pig', 'Dog', 'Mouse'];
 
-//console.log(animals);
+console.log(animals);
 
 // let's say good night to all of our animals
 
-document.write('<ol>');
-
-for(var i = 0; i < animals.length; i++) {
-	document.write('<li>Good night, ' + animals[i] + '.</li>');
+for(var j = 0; j < animals.length; j++) {
+    // say good night
+    var count = j+1;
+    console.log(count + ': Good night, ' + animals[j]);
 }
 
-document.write('</ol>');
 
+var numbers = [1, 2, 3, 4, 5];
 
-/*var numbers = [1, 2, 3, 4, 5];
+// square all of the numbers, please:
 
-for (var i = 0; i < numbers.length; i++) {
-
-	//var squared = numbers[i] * numbers[i];
-	
-	//console.log(squared);
-	
+for(var j = 0; j < numbers.length; j++) {
+    // square this number
+    console.log(numbers[j] * numbers[j]);
 }
-
-// square the numbers*/
