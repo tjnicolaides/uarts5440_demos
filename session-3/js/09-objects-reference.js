@@ -6,6 +6,9 @@ var movie = {
 var anotherMovie = movie;
     anotherMovie.director = 'JJ Abrams';
 
+    console.log(movie); // who's the director? 
+    
+    
 var director = movie.director;
 
 
