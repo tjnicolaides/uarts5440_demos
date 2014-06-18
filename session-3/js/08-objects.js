@@ -3,9 +3,8 @@
  var stooge = {
  	"first-name": "Jerome",
  	"last-name": "Howard",
-     active: false,
-     "class": 'original'
- };
+     active: false
+};
  
  var flight = {
  	airline: "Oceanic",

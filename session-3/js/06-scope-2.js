@@ -6,7 +6,7 @@ function parentFunction() {
   
   function childFunction() {
       
-    console.log(variable);
+    //console.log(variable);
     
   }
   

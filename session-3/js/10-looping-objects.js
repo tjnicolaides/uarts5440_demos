@@ -15,15 +15,5 @@
  
  var name;
  for (name in flight) {
- 	if (typeof flight[name] !== 'function') {
-         
-         if(typeof flight[name] == 'object') {
-             var subName;
-             for (subName in flight[name]) {
-                 console.log(flight[name][subName]);
-             }
-         } else {
-     	    console.log(name + ': ' + flight[name]);
-         }
- 	}
+     
  }

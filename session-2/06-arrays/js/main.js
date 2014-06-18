@@ -17,5 +17,5 @@ var numbers = [1, 2, 3, 4, 5];
 
 for(var j = 0; j < numbers.length; j++) {
     // square this number
-    console.log(numbers[j] * numbers[j]);
+    console.log(numbers[j]);
 }
