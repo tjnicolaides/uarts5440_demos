@@ -1,4 +1,7 @@
 document.onreadystatechange = function() {
+    
+    console.log('I\'m ready for my closeup, Mr. Deville');
+    
     if (document.readyState === 'complete') {
 		
 		// SELECT / MANIPULATE
@@ -13,14 +16,14 @@ document.onreadystatechange = function() {
 };
 
 function selectDOM() {
+
 	var buttons = document.getElementsByClassName('btn');
-	for (var i = 0; i < buttons.length; i++) {			
-		if(buttons[i].className == 'btn') {
-			console.log(buttons[i]);
-			
-			buttons[i].className += ' btn-warning';
-			buttons[i].innerHTML = 'Learn more.';
-		}
+
+	for(var i =0; i< buttons.length; i++) {
+	    if(buttons[i].className == "btn") {
+	        buttons[i].className += ' btn-warning';
+	        buttons[i].innerHTML = "Learn more. &raquo;";
+	    }
 	}
 }
 
@@ -53,6 +56,8 @@ function generateDOM() {
 	}
 	
 	var sidebar = document.getElementsByClassName('span3');
+	console.log(sidebar);
+	
 	for(var j = 0; j < sidebar.length; j++) {
         sidebar[j].appendChild(div);   
 	}

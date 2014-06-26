@@ -11,9 +11,10 @@ $(document).ready(function() {
 });
 
 function selectDOM() {
+    
+    $('.btn').text('Foo').not('.btn-primary').addClass('btn-warning');
 
-	$('.span4:even .btn').addClass('btn-warning').text('Learn more');
-
+    
 	/*var buttons = document.getElementsByClassName('btn');
 	for (var i = 0; i < buttons.length; i++) {			
 		if(buttons[i].className == 'btn') {
@@ -27,7 +28,10 @@ function selectDOM() {
 
 function generateDOM() {
 	
-	var $div = $('<div/>', {'class': 'well sidebar-nav'});
+	var $div = $('<div/>', {'class': 'well sidebar-nav', 'id': 'myDiv'});
+	console.log($div);
+	var $div2 = $('<div id="myDiv" class="well sidebar-nav"></div>');
+	
 	var $ul = $('<ul/>', {'class' : 'nav nav-list'});
 	
 	var $li;
@@ -40,6 +44,7 @@ function generateDOM() {
 		
 		$ul.append($li);
 	}	
+	
 	
 	$('.span3').append($div.append($ul));
 	
@@ -79,7 +84,9 @@ function generateDOM() {
 }
 
 function deleteDOM() {
-	$('.hero-unit').remove();
+    
+    $('.hero-unit').remove();
+
 	/*var heroUnit = document.getElementsByClassName('hero-unit');
 	for (var i = 0; i < heroUnit.length; i++) {			
 		var node = heroUnit[i].parentNode;

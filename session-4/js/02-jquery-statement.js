@@ -1,6 +1,6 @@
-console.log($(document));
-console.log($);
-
+$(document).ready(function(){
+    console.log('hello from the document ready function');    
+});
 
 $(document).ready(function() {
 
