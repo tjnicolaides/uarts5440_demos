@@ -11,23 +11,16 @@ function Monster(name, saying) {
 
 var godzilla = new Monster();
 
-var mothra = new Monster(false, "SCREEE");
-
-    //mothra.name = "MechaMothra";
-	/*mothra.attack = function() {
-		return this.name + ' flies sprays sticky silk webbing. Gross.';
-	}*/
-
-
-
-
-
+// Another monster = Mothra
+// Mothra has a different saying
+// Mothra has a different attack
+  
 function Opponent(name, saying) {
 	this.name = name || "Generic Godzilla Opponent";
 	this.saying = saying || "**crickets**";
 	this.opponent = "Godzilla";
 }
 
-Opponent.prototype = new Monster();
+Opponent.prototype = new Monster(); // in this case, Monster opponents are also Monsters
 
-var mecha_godzilla = new Opponent("Mecha Godzilla", "CLANK CLANK");
+//var mecha_godzilla = new Opponent("Mecha Godzilla", "CLANK CLANK");

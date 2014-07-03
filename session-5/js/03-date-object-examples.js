@@ -22,30 +22,43 @@ var yetAnotherDate = new Date(1992, 03, 26); // parse using integers representin
 // MEASURE ACTUAL TIME IN YOUR APP 
 function howLongDidItTake() {
 	var end, start;
-
-	start = new Date();
-	for (var i = 0; i < 1000; i++) {
-        //Math.sqrt(i);
-		//console.log(Math.sqrt(i));
-	}
-	end = new Date();
 	
-	console.log("Operation took " + (end.getTime() - start.getTime()) + " msec");
+	start = new Date();
+	
+	    for(var i = 0; i < 10000; i++) {
+	        console.log(Math.sqrt(i));
+	    }
+	
+	end = new Date();
+    
+    var totalTime = end.getTime() - start.getTime();
+    return 'This function took ' + totalTime + ' mseconds';
+	
+	// use date object's .getTime() method to get difference in milliseconds
 }
 
 // COMPARE DATES LIKE INTEGERS
 //console.log(today.getTime() < anotherDate.getTime()); // is today before or after anotherDate?
 
 function should_I_panic() {
-	var oneWeekFromNow = new Date();
-		oneWeekFromNow.setDate(oneWeekFromNow.getDate() + 7);
-		
-	var urgentDate = new Date(2013, 6, 4);
+	// get today's date
+	var today = new Date();
+	// add 7 days
+	var deadline = new Date();
+	deadline.setDate(today.getDate() + 7); 
 	
-	if(oneWeekFromNow.getTime() > urgentDate.getTime()) {
-		console.log('Your appointment is in less than a week! PANIC.');
+	console.log(deadline);
+	// compare it to the date of your appointment
+	
+	var appointment = new Date(2014, 05, 13);
+	
+	console.log(appointment);
+	// if the appointment is less than seven days away, panic.
+	
+	if(appointment > today && appointment < deadline) {
+	    return "You'd better get moving!";
 	} else {
-		console.log('You\'ve got plenty of time. Kick back and relax, go watch Ghostbusters again or something.');
+	    return "relax, go back to bed.";
 	}
 }
 

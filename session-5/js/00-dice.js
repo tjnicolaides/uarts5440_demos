@@ -19,9 +19,12 @@ function animateDie($die) {
     }, 100);
     var timeout = setTimeout(function(){
         clearInterval(interval);
-        checkForMatch();
+        
+        setTimeout(function(){
+            checkForMatch();
+        }, 500);
+        
     }, timer);
-    
 }
 
 function checkForMatch() {
@@ -37,7 +40,7 @@ function checkForMatch() {
 
 $(document).ready(function() {
 
-	createDice(10);
+	createDice(2);
 	
 	$('#trigger').on('click', function(){
 		rollDice();
