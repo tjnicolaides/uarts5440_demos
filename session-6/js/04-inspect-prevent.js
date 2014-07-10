@@ -4,7 +4,7 @@ $(document).ready(function() {
 
 
 	$('#clickme').on('click', function(foo){
-		foo.preventDefault();
+		//foo.preventDefault();
 		console.log(foo);
 	});
 

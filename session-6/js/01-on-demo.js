@@ -1,9 +1,24 @@
+$(document).on('ready', function(){
+	
+	console.log('document is ready!');
+	
+});
 $(document).ready(function() {
 
 	// click / dblclick
 	
 	$('#clickme').on('click', function(evt){
+		evt.preventDefault();
+		
+		var href = $(this).attr('href');
+		
+		console.log('open this URL: ' + href + ' in a modal.');
 		console.log('You just clicked #clickme!');
+		// do some other stuff here
+	});
+	
+	$('#clickmetoo').on('dblclick', function(evt){
+		console.log('You just clicked #clickmetoo -- TWICE IN A ROW');
 		// do some other stuff here
 	});
 	
@@ -25,8 +40,11 @@ $(document).ready(function() {
 	
 	$('#hoverme').on('mouseenter', function(e) {
 		console.log('hovering!');
+		$(this).removeClass('btn-info');
 	}).on('mouseleave', function(){
 		console.log('not hovering');
+		$(this).addClass('btn-info');
+
 	});
 	
 	// submit
