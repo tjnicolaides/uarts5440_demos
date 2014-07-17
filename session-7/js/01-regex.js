@@ -9,7 +9,7 @@ $(document).ready(function() {
 		
 		var value = $(this).val();
 		var match = value.search(regex.email);
-
+		console.log(match);
 		if(match > -1) {
 			$(this).parents('.control-group').removeClass('error').addClass('success');
 		} else {
